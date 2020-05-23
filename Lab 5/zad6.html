@@ -19,7 +19,7 @@
             $('div').text(text);
         });
 
-        $("textarea").keydown(function(){
+        $("textarea").keyup(function(){
         var textLength = $('textarea').val().length;
         var left = 200 - parseInt(textLength);
         $('div').text(`Pozostało ${left}`);
